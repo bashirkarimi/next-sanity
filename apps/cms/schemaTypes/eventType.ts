@@ -1,6 +1,8 @@
-import { validation } from "sanity";
+import { validation, defineType } from "sanity";
+import {  } from "sanity";
+import { media } from "sanity-plugin-media";
 
-export const eventType = {
+export const eventType = defineType({
   name: 'event',
   title: 'Event',
   type: 'document',
@@ -93,4 +95,22 @@ export const eventType = {
       type: 'url'
     }
   ],
-}
+  preview: {
+    select: {
+      title: 'title',
+      media: 'image',
+      eventType: 'eventType'
+    },
+    prepare(selection: any) {
+      const {title, media, eventType } = selection;
+      const venue = eventType === 'onsite' ? 'Onsite' : '';
+      const subtitle = venue ? `${eventType} at ${venue}` : eventType;
+      
+      return {
+        title,
+        subtitle,
+        media
+      }
+    }
+  },
+});
