@@ -96,7 +96,7 @@ export const eventType = defineType({
   ],
   preview: {
     select: {
-      title: 'title',
+      title: 'name',
       media: 'image',
       eventType: 'eventType',
       venue: 'venue.name'
