@@ -50,7 +50,7 @@ export const eventType = defineType({
       group: 'eventDetails'
     },
     {
-      name: 'doorsOpoen',
+      name: 'doorsOpen',
       title: 'Doors Open',
       type: 'number',
       group: 'eventDetails',
