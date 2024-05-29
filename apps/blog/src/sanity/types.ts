@@ -434,3 +434,14 @@ export type InternationalizedArrayReference = Array<
 export declare const internalGroqTypeReferenceTo: unique symbol;
 
 
+// Source: ../blog/src/app/page.tsx
+// Variable: EVENT_QUERY
+// Query: *[_type == "event"] { _id, title, slug, date }
+export type EVENT_QUERYResult = Array<{
+  _id: string;
+  title: string | null;
+  slug: Slug | null;
+  date: string | null;
+}>;
+
+
