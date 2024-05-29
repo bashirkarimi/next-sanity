@@ -3,7 +3,7 @@ import { createClient, type QueryParams } from '@sanity/client';
 
 export const client = createClient({
   projectId: 'lyam3oa7',
-  dataset: 'blog',
+  dataset: 'production',
   apiVersion: '2022-03-25',
   useCdn: false
 });

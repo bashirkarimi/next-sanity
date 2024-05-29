@@ -11,12 +11,9 @@ export const eventType = defineType({
   ],
   fields: [
     {
-      name: 'title',
-      title: 'Title',
+      name: 'name',
+      title: 'Name',
       type: 'string',
-      validation: (rule: any) => rule
-      .required()
-      .error('Title is required'),
       group: 'eventDetails'
     },
     {
@@ -67,7 +64,7 @@ export const eventType = defineType({
       }
     },
     {
-      name: 'headLine',
+      name: 'headline',
       title: 'Head line',
       type: 'reference',
       to: {

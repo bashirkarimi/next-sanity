@@ -9,7 +9,7 @@ export const authorType = {
       type: 'string'
     },
     {
-      name: 'avatar',
+      name: 'image',
       title: 'Avatar',
       type: 'image',
       options: {

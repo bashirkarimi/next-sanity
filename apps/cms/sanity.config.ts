@@ -10,7 +10,7 @@ export default defineConfig({
   title: 'next sanity',
 
   projectId: 'lyam3oa7',
-  dataset: 'blog',
+  dataset: 'production',
 
   plugins: [
     documentInternationalization({
