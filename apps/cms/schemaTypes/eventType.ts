@@ -1,6 +1,5 @@
-import { validation, defineType } from "sanity";
-import {  } from "sanity";
-import { media } from "sanity-plugin-media";
+import { defineType } from "sanity";
+import { doorsOpenInput } from "./components/doorsOpenInput";
 
 export const eventType = defineType({
   name: 'event',
@@ -54,7 +53,10 @@ export const eventType = defineType({
       name: 'doorsOpoen',
       title: 'Doors Open',
       type: 'number',
-      group: 'eventDetails'
+      group: 'eventDetails',
+      components: {
+        input: doorsOpenInput
+      }
     },
     {
       name: 'venue',
@@ -99,13 +101,14 @@ export const eventType = defineType({
     select: {
       title: 'title',
       media: 'image',
-      eventType: 'eventType'
+      eventType: 'eventType',
+      venue: 'venue.name'
     },
     prepare(selection: any) {
-      const {title, media, eventType } = selection;
-      const venue = eventType === 'onsite' ? 'Onsite' : '';
-      const subtitle = venue ? `${eventType} at ${venue}` : eventType;
-      
+      const {title, media, eventType, venue } = selection;
+      const onSite = eventType === 'onsite' ? 'Onsite' : '';
+      const subtitle = onSite ? `${eventType} at ${venue}` : eventType;
+
       return {
         title,
         subtitle,
