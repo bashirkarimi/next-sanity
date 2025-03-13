@@ -3,9 +3,11 @@ import Link from "next/link";
 import { EVENT_QUERY } from "~/sanity/queries";
 
 export default async function Home() {
-  const events = await sanityFetch<{ _id: string; title: string; slug: { current: string }; date: string }[]>({
-    query: EVENT_QUERY
-  })
+  const events = await sanityFetch<
+    { _id: string; title: string; slug: { current: string }; date: string }[]
+  >({
+    query: EVENT_QUERY,
+  });
   return (
     <main className="container mx-auto min-h-screen  ">
       <div className="container flex flex-col  gap-12 px-4 py-16 ">

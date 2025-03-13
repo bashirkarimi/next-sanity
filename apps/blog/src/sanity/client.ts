@@ -1,5 +1,7 @@
-import 'server-only';
+'server-only';
 import { createClient, type QueryParams } from '@sanity/client';
+import { EnvHttpProxyAgent, setGlobalDispatcher } from "undici";
+import { env } from "~/env";
 
 export const client = createClient({
   projectId: 'lyam3oa7',
@@ -7,9 +9,18 @@ export const client = createClient({
   apiVersion: '2022-03-25',
   useCdn: false
 });
+console.log('env https proxy', env.HTTPS_PROXY, env.HTTP_PROXY);
+if (env.HTTP_PROXY || env.HTTPS_PROXY) {
+  const envHttpProxyAgent = new EnvHttpProxyAgent();
+  setGlobalDispatcher(envHttpProxyAgent);
+}
 
-console.log('Sanity client created', client);
+export async function getPosts() {
+  const posts = await client.fetch('*[_type == "post"][0]')
+  return posts
+}
 
+console.log('Sanity client created', getPosts);
 export async function sanityFetch<QueryResponse>({query, params = {}, tags}: {
   query: string,
   params?: QueryParams,
