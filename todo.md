@@ -2,4 +2,4 @@
 
 - [ ] Create Image module
 - [ ] Implement Image with Sanity
-- [ ] todo
+- [ ] Add Sanity live
