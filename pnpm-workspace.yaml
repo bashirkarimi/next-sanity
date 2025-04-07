@@ -26,4 +26,4 @@ catalogs:
     "@types/react-dom": ^19.0.4
   sanity:
     "@sanity/types": 3.80.1
-    sanity: 3.41.1
+    sanity: ^3.82.0
