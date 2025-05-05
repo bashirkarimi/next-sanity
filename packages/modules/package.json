@@ -1,0 +1,30 @@
+{
+  "name": "@next-sanity/modules",
+  "version": "1.0.0",
+  "description": "A collection of modules for various purposes",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "@next-sanity/eslint-config": "workspace:^",
+    "@next-sanity/tailwind-config": "workspace:^",
+    "@next-sanity/typescript-config": "workspace:^",
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.1.2",
+    "eslint": "^9.26.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "next": "catalog:next15",
+    "react": "catalog:react19",
+    "react-dom": "catalog:react19"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "lint": "eslint .",
+    "clean": "rm -rf .turbo dist node_modules"
+  }
+}
