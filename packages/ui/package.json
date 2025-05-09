@@ -29,8 +29,7 @@
   "peerDependencies": {
     "next": "catalog:next14",
     "react": "catalog:react18",
-    "react-dom": "catalog:react18",
-    "sanity": "catalog:sanity"
+    "react-dom": "catalog:react18"
   },
   "type": "module"
 }

@@ -19,7 +19,7 @@
     "@sanity/vision": "^3.41.1",
     "react": "catalog:react18",
     "react-dom": "catalog:react18",
-    "sanity": "catalog:sanity",
+    "sanity": "catalog:",
     "sanity-plugin-media": "^2.2.5",
     "styled-components": "^6.1.8"
   },

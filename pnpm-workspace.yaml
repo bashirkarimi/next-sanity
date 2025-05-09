@@ -5,6 +5,8 @@ packages:
 catalog:
   eslint: ^9.23.0
   "next-sanity-image": ^6.1.1
+  "@sanity/types": 3.80.1
+  sanity: ^3.82.0
 catalogs:
   next14:
     "@next/bundle-analyzer": ^14.2.23
@@ -24,6 +26,3 @@ catalogs:
     react-dom: ^19.0.0
     "@types/react": ^19.0.10
     "@types/react-dom": ^19.0.4
-  sanity:
-    "@sanity/types": 3.80.1
-    sanity: ^3.82.0

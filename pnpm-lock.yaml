@@ -9,6 +9,9 @@ catalogs:
     eslint:
       specifier: ^9.23.0
       version: 9.23.0
+    sanity:
+      specifier: ^3.82.0
+      version: 3.82.0
   next14:
     next:
       specifier: ^14.2.23
@@ -20,10 +23,6 @@ catalogs:
     react-dom:
       specifier: ^18.3.1
       version: 18.3.1
-  sanity:
-    sanity:
-      specifier: ^3.82.0
-      version: 3.82.0
 
 importers:
 
@@ -151,7 +150,7 @@ importers:
         specifier: catalog:react18
         version: 18.3.1(react@19.1.0)
       sanity:
-        specifier: catalog:sanity
+        specifier: 'catalog:'
         version: 3.82.0(@emotion/is-prop-valid@1.2.2)(@types/node@20.16.2)(@types/react@18.3.4)(jiti@1.21.6)(react-dom@18.3.1(react@19.1.0))(react@19.1.0)(styled-components@6.1.12(react-dom@18.3.1(react@19.1.0))(react@19.1.0))(yaml@2.7.1)
       sanity-plugin-media:
         specifier: ^2.2.5
@@ -216,9 +215,6 @@ importers:
       react-dom:
         specifier: catalog:react18
         version: 18.3.1(react@19.1.0)
-      sanity:
-        specifier: catalog:sanity
-        version: 3.82.0(@emotion/is-prop-valid@1.2.2)(@types/node@20.16.2)(@types/react@18.3.4)(jiti@1.21.6)(react-dom@18.3.1(react@19.1.0))(react@19.1.0)(styled-components@6.1.12(react-dom@18.3.1(react@19.1.0))(react@19.1.0))(yaml@2.7.1)
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -9613,15 +9609,15 @@ snapshots:
       - '@types/react'
       - supports-color
 
-  '@sanity/presentation-comlink@1.0.14(@sanity/client@6.28.4)(@sanity/types@3.82.0(@types/react@18.3.4)(debug@4.4.0))':
+  '@sanity/presentation-comlink@1.0.14(@sanity/client@6.28.4(debug@4.4.0))(@sanity/types@3.82.0(@types/react@18.3.4)(debug@4.4.0))':
     dependencies:
       '@sanity/client': 6.28.4(debug@4.4.0)
       '@sanity/comlink': 3.0.1
-      '@sanity/visual-editing-types': 1.0.13(@sanity/client@6.28.4)(@sanity/types@3.82.0(@types/react@18.3.4)(debug@4.4.0))
+      '@sanity/visual-editing-types': 1.0.13(@sanity/client@6.28.4(debug@4.4.0))(@sanity/types@3.82.0(@types/react@18.3.4)(debug@4.4.0))
     transitivePeerDependencies:
       - '@sanity/types'
 
-  '@sanity/preview-url-secret@2.1.7(@sanity/client@6.28.4)':
+  '@sanity/preview-url-secret@2.1.7(@sanity/client@6.28.4(debug@4.4.0))':
     dependencies:
       '@sanity/client': 6.28.4(debug@4.4.0)
       '@sanity/uuid': 3.0.2
@@ -9770,7 +9766,7 @@ snapshots:
       - react-dom
       - react-is
 
-  '@sanity/visual-editing-types@1.0.13(@sanity/client@6.28.4)(@sanity/types@3.82.0(@types/react@18.3.4)(debug@4.4.0))':
+  '@sanity/visual-editing-types@1.0.13(@sanity/client@6.28.4(debug@4.4.0))(@sanity/types@3.82.0(@types/react@18.3.4)(debug@4.4.0))':
     dependencies:
       '@sanity/client': 6.28.4(debug@4.4.0)
     optionalDependencies:
@@ -14261,8 +14257,8 @@ snapshots:
       '@sanity/logos': 2.1.13(@sanity/color@3.0.6)(react@19.1.0)
       '@sanity/migrate': 3.82.0(@types/react@18.3.4)
       '@sanity/mutator': 3.82.0(@types/react@18.3.4)
-      '@sanity/presentation-comlink': 1.0.14(@sanity/client@6.28.4)(@sanity/types@3.82.0(@types/react@18.3.4)(debug@4.4.0))
-      '@sanity/preview-url-secret': 2.1.7(@sanity/client@6.28.4)
+      '@sanity/presentation-comlink': 1.0.14(@sanity/client@6.28.4(debug@4.4.0))(@sanity/types@3.82.0(@types/react@18.3.4)(debug@4.4.0))
+      '@sanity/preview-url-secret': 2.1.7(@sanity/client@6.28.4(debug@4.4.0))
       '@sanity/schema': 3.82.0(@types/react@18.3.4)(debug@4.4.0)
       '@sanity/telemetry': 0.8.1(react@19.1.0)
       '@sanity/types': 3.82.0(@types/react@18.3.4)(debug@4.4.0)
