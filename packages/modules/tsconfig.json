@@ -1,0 +1,13 @@
+{
+  "extends": "@next-sanity/typescript-config/react-library.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "dom", "dom.iterable"],
+    "jsx": "react-jsx",
+    "rootDir": "src",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
+  },
+  "include": ["src/components"],
+  "exclude": ["node_modules"]
+}
