@@ -7,9 +7,9 @@
   "scripts": {
     "dev": "sanity dev --port 3002",
     "start": "sanity start",
-    "build": "sanity build",
-    "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "build": "npx sanity build",
+    "deploy": "npx sanity deploy",
+    "deploy-graphql": "npx sanity graphql deploy"
   },
   "keywords": [
     "sanity"
