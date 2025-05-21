@@ -28,8 +28,8 @@
   },
   "peerDependencies": {
     "next": "catalog:next14",
-    "react": "catalog:react19",
-    "react-dom": "catalog:react19",
+    "react": "catalog:",
+    "react-dom": "catalog:",
     "sanity": "catalog:sanity"
   },
   "type": "module"
