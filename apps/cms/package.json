@@ -17,8 +17,8 @@
   "dependencies": {
     "@sanity/document-internationalization": "^3.0.0",
     "@sanity/vision": "^3.41.1",
-    "react": "catalog:",
-    "react-dom": "catalog:",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "sanity": "3.82.0",
     "sanity-plugin-media": "^2.2.5",
     "styled-components": "^6.1.15"
