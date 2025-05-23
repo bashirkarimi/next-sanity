@@ -14,8 +14,8 @@
     "@types/node": "^22.15.3",
     "@types/react": "^19.1.2",
     "eslint": "^9.26.0",
-    "tailwindcss": "catalog:",
-    "typescript": "catalog:"
+    "tailwindcss": "workspace:^",
+    "typescript": "workspace:^"
   },
   "peerDependencies": {
     "next": "catalog:next15",
