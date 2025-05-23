@@ -1,5 +1,5 @@
 {
-  "name": "next-sanity",
+  "name": "@next-sanity/studio",
   "private": true,
   "version": "1.0.0",
   "main": "package.json",
