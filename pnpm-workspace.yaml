@@ -3,7 +3,7 @@ packages:
   - packages/*
 
 catalog:
-  eslint: ^9.23.0
+  eslint: ^9.27.0
   "next-sanity-image": ^6.1.1
   "@sanity/types": 3.80.1
   sanity: ^3.82.0
