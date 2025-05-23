@@ -15,7 +15,7 @@
     "@types/react": "^19.1.2",
     "eslint": "^9.26.0",
     "tailwindcss": "workspace:^",
-    "typescript": "catalog:"
+    "typescript": "workspace:^"
   },
   "peerDependencies": {
     "next": "catalog:next15",
