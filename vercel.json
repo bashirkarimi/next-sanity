@@ -1,5 +1,6 @@
 {
   "buildCommand": "pnpm build",
-  "installCommand": "pnpm install",
-  "framework": "nextjs"
+  "installCommand": "pnpm install --frozen-lockfile",
+  "framework": "nextjs",
+  "functions": {"app/**": {"runtime": "nodejs20.x"}}
 }
